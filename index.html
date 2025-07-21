@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BuniFix - Liberte-se da Dor do Joanete SEM CIRURGIA!</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="./images/bunifix.avif" alt="Logo">
+            </div>
+            <div class="urgency-badge">
+                <span>🔥 OFERTA LIMITADA</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <strong>BUNIFIX™</strong> - Liberte-se da Dor do Joanete <span class="highlight">SEM CIRURGIA!</span>
+                </h1>
+                <h2 class="hero-subtitle"><strong>PARE DE SOFRER!</strong> Sua Solução Definitiva Chegou</h2>
+                
+                <div class="hero-description">
+                    <p>Você está <strong>cansado</strong> de sentir dor a cada passo? Seus joanetes estão <strong>arruinando</strong> sua qualidade de vida? <strong>CHEGA DE SOFRIMENTO!</strong></p>
+                </div>
+
+                <div class="price-section">
+                    <div class="image-gallery">
+                        <div class="gallery-container">
+                            <button class="gallery-btn prev-btn" onclick="changeImage(-1)">‹</button>
+                            <div class="image-wrapper">
+                                <img id="gallery-image" src="./images/1.webp" alt="Produto 1">
+                            </div>
+                            <button class="gallery-btn next-btn" onclick="changeImage(1)">›</button>
+                        </div>
+                        <div class="image-indicators">
+                            <span class="indicator active" onclick="currentImage(1)"></span>
+                            <span class="indicator" onclick="currentImage(2)"></span>
+                            <span class="indicator" onclick="currentImage(3)"></span>
+                            <span class="indicator" onclick="currentImage(4)"></span>
+                            <span class="indicator" onclick="currentImage(5)"></span>
+                            <span class="indicator" onclick="currentImage(6)"></span>
+                        </div>
+                    </div>
+                    <div class="old-price">De: R$&nbsp;257,00</div>
+                    <div class="main-price">
+                        <span class="price-d">HOJE APENAS: </span>
+                        <span class="price-value">R$&nbsp;128,95</span>
+                    </div>
+                    <div class="good-installments">ou 12x de R$&nbsp;17,18</div>
+                    <div class="discount"><i class="fa-solid fa-fire-flame-curved"></i> DESCONTO DE 50% - ECONOMIA DE R$&nbsp;128,50!</div>
+                </div>
+
+                <div class="countdown-container">
+                    <h3><i class="fa-solid fa-clock"></i> Esta Oferta Expira em:</h3>
+                    <div class="countdown" id="countdown">
+                        <div class="time-unit">
+                            <span id="hours">23</span>
+                            <label>Horas</label>
+                        </div>
+                        <div class="time-unit">
+                            <span id="minutes">45</span>
+                            <label>Minutos</label>
+                        </div>
+                        <div class="time-unit">
+                            <span id="seconds">12</span>
+                            <label>Segundos</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cta-buttons">
+                    <a href="https://checkout.bunifix.site/VCCL1O8SC292" class="btn-primary">
+                        QUERO ME LIVRAR DA DOR AGORA
+                    </a>
+                    <div class="guarantee">
+                        <i class="fa-solid fa-shield-alt"></i> Garantia de 90 dias ou dinheiro de volta
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Package Selection Section -->
+    <section class="package-selection" id="packages">
+        <div class="container">
+            <h2>ESCOLHA SEU PACOTE - QUANTO MAIS VOCÊ COMPRA, MAIS ECONOMIZA!</h2>
+            <p class="package-subtitle"><i class="fa-solid fa-bolt"></i> <strong>Oferta especial:</strong> A maioria dos nossos clientes compra 2 ou 3 unidades (um para cada pé + reserva)</p>
+
+            <div class="packages-grid">
+                <!-- Pacote Básico -->
+                <div class="package-card">
+                    <div class="package-header">
+                        <h3>ESSENCIAL</h3>
+                        <div class="package-quantity">1 Unidade</div>
+                    </div>
+                    <div class="package-price">
+                        <div class="old-price">R$ 257,00</div>
+                        <div class="current-price">R$ 128,95</div>
+                        <div class="installments">ou 12x de R$&nbsp;17,18</div>
+                    </div>
+                    <div class="package-features">
+                        <div class="feature"><i class="fa-solid fa-square-check package-check"></i> 1x BUNIFIX™ (Corretor de joanetes)</div>
+                        <div class="feature"><i class="fa-solid fa-square-check package-check"></i> eBook Grátis</div>
+                        <div class="feature"><i class="fa-solid fa-square-check package-check"></i> Garantia 90 dias</div>
+                        <div class="feature"><i class="fa-solid fa-square-check package-check"></i> Frete Grátis</div>
+                    </div>
+                    <a href="https://checkout.bunifix.site/VCCL1O8SC292" class="btn-package">
+                        COMPRAR AGORA
+                    </a>
+                </div>
+
+                <!-- Pacote Popular -->
+                <div class="package-card popular">
+                    <div class="package-badge"><i class="fa-solid fa-fire-flame-curved"></i> MAIS POPULAR</div>
+                    <div class="package-header">
+                        <h3>PAR PERFEITO</h3>
+                        <div class="package-quantity">2 Unidades</div>
+                    </div>
+                    <div class="package-price">
+                        <div class="old-price">R$ 394,00</div>
+                        <div class="current-price">R$ 194,42</div>
+                        <div class="economy"><i class="fa-solid fa-coins"></i> ECONOMIZE R$ 63,48</div>
+                        <div class="installments">ou 12x de R$&nbsp;25,91</div>
+                    </div>
+                    <div class="package-features">
+                        <div class="feature"><i class="fa-solid fa-square-check package-check"></i> 2x BUNIFIX™ (Corretor de joanetes)</div>
+                        <div class="feature"><i class="fa-solid fa-square-check package-check"></i> eBook Grátis</div>
+                        <div class="feature"><i class="fa-solid fa-square-check package-check"></i> Garantia 90 dias</div>
+                        <div class="feature"><i class="fa-solid fa-square-check package-check"></i> Frete Grátis</div>
+                        <div class="feature highlight"><i class="fa-solid fa-gift package-gift"></i> 25% de Desconto</div>
+                    </div>
+                    <a href="https://checkout.bunifix.site/VCCL1O8SC29D" class="btn-package btn-popular">
+                        COMPRAR AGORA
+                    </a>
+                </div>
+
+                <!-- Pacote Completo -->
+                <div class="package-card">
+                    <div class="package-badge"><i class="fa-solid fa-gem"></i> MELHOR VALOR</div>
+                    <div class="package-header">
+                        <h3>FAMÍLIA</h3>
+                        <div class="package-quantity">3 Unidades</div>
+                    </div>
+                    <div class="package-price">
+                        <div class="old-price">R$ 591,00</div>
+                        <div class="current-price">R$ 257,91</div>
+                        <div class="economy"><i class="fa-solid fa-coins"></i> ECONOMIZE R$ 128,94</div>
+                        <div class="installments">ou 12x de R$&nbsp;34,37</div>
+                    </div>
+                    <div class="package-features">
+                        <div class="feature"><i class="fa-solid fa-square-check package-check"></i> 3x BUNIFIX™ (Corretor de joanetes)</div>
+                        <div class="feature"><i class="fa-solid fa-square-check package-check"></i> eBook Grátis</div>
+                        <div class="feature"><i class="fa-solid fa-square-check package-check"></i> Garantia 90 dias</div>
+                        <div class="feature"><i class="fa-solid fa-square-check package-check"></i> Frete Grátis</div>
+                        <div class="feature highlight"><i class="fa-solid fa-gift package-gift"></i> 33% de Desconto</div>
+                        <div class="feature highlight"><i class="fa-solid fa-gift package-gift"></i> Bônus: Guia de Exercícios</div>
+                    </div>
+                    <a href="https://checkout.bunifix.site/VCCL1O8SC29E" class="btn-package">
+                        COMPRAR AGORA
+                    </a>
+                </div>
+            </div>
+
+            <!-- <div class="package-benefits">
+                <h4><i class="fa-solid fa-lightbulb"></i> Por que nossos clientes compram mais de 1 unidade?</h4>
+                <div class="benefits-list">
+                    <div class="benefit">👥 <strong>Casal:</strong> Muitos casais sofrem com joanetes</div>
+                    <div class="benefit">🦶 <strong>Ambos os pés:</strong> Joanetes geralmente aparecem nos dois pés</div>
+                    <div class="benefit">🔄 <strong>Reserva:</strong> Ter uma unidade extra para uso contínuo</div>
+                    <div class="benefit">🎁 <strong>Presente:</strong> Compartilhar o alívio com familiares</div>
+                </div>
+            </div> -->
+        </div>
+    </section>
+    <!-- Package Selection Section -->
+
+    
+
+    <!-- Problems Section -->
+    <section class="problems">
+        <div class="container">
+            <h2>O Que Acontece Se Você NÃO Agir AGORA:</h2>
+            <div class="problems-grid">
+                <div class="problem-item">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <p>Dor <strong>INTENSA</strong> que só piora com o tempo</p>
+                </div>
+                <div class="problem-item">
+                    <i class="fas fa-user-injured"></i>
+                    <p>Dedos sobrepostos e deformidades permanentes</p>
+                </div>
+                <div class="problem-item">
+                    <i class="fas fa-cut"></i>
+                    <p>Necessidade de <strong>cirurgia invasiva</strong> e cara</p>
+                </div>
+                <div class="problem-item">
+                    <i class="fas fa-wheelchair"></i>
+                    <p><strong>Imobilidade</strong> e dependência de analgésicos</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section class="solution">
+        <div class="container">
+            <h2><i class="fa-solid fa-circle-check"></i> BUNIFIX™: A Revolução no Tratamento de Joanetes</h2>
+            <h3>Por Que o BUNIFIX É Diferente de Tudo Que Você Já Viu?</h3>
+            
+            <div class="features-grid">
+                <div class="feature-item">
+                    <i class="fas fa-microscope"></i>
+                    <h4>Tecnologia Avançada</h4>
+                    <p>Utiliza terapia de alinhamento clinicamente comprovada</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-cog"></i>
+                    <h4>Mecanismo Patenteado</h4>
+                    <p>Realinha suavemente seu dedão na posição natural</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-bolt"></i>
+                    <h4>Resultados Rápidos</h4>
+                    <p>Alívio imediato e correção a longo prazo</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-user-md"></i>
+                    <h4>Aprovado por Médicos</h4>
+                    <p>Recomendado por ortopedistas</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Description -->
+    <section class="description">
+        <div class="description-container">
+            <div class="description-panel">
+                <h2>Você Está a Um Passo da <b class="description-highligt-text">Liberdade</b> — <b class="description-highligt-text">Diga Adeus</b> aos Joanetes, Inchaços e Dores nos Pés</h2>
+                <div class="description-text">
+                    <p>
+                        Se você está lendo isso, provavelmente está lidando com a dor incômoda dos joanetes.
+                        E essa dor não apenas machuca — ela limita sua rotina, seus passos e sua liberdade.
+                    </p>
+                    <p>
+                        Sem tratamento, a situação só piora: os joanetes podem causar dedos sobrepostos, 
+                        dedos em martelo, esporões ósseos dolorosos e até complicações graves 
+                        como cirurgias, dependência de analgésicos ou até perda de mobilidade.
+                    </p>
+                    <p>
+                        Mas existe um caminho melhor.
+                        Com o BuniFix™ Bunion Fix, você pode realinhar seus dedos, aliviar a dor e restaurar a saúde dos seus pés 
+                        — tudo isso com apenas 30 minutos por dia, graças à sua terapia de alinhamento clinicamente comprovada e ao design patenteado com dobradiça articulada.
+                    </p>
+                    <p><b>Chega de sofrer em silêncio. Seus pés merecem liberdade.</b></p>
+                </div>
+            </div>
+            <div class="description-image">
+                <img src="./images/demo.webp" alt="Demonstração">
+            </div>
+        </div>
+    </section>
+    <!-- Description -->
+
+    <!-- How Does It Work Section -->
+    <section class="how-work">
+        <div class="how-work-container">
+            <div class="how-work-panel">
+                <h2>Como Funciona?</h2>
+                <div class="how-work-text">
+                    <p>O BuniFix™ Bunion Fix utiliza uma terapia avançada de alinhamento para realinhar suavemente o seu dedão e reduzir a inflamação — graças a um mecanismo exclusivo com dobradiça patenteada.</p>
+                    <p>Ele atua puxando gradualmente o joanete de volta à sua posição natural, aliviando a tensão acumulada, endireitando a articulação do dedo e eliminando a dor. O resultado? Pés mais saudáveis, mais conforto e a confiança para ficar de pé com orgulho novamente.</p>
+                    <p>É possível que você precise de um curto período de adaptação ao seu suporte firme — pode parecer mais robusto do que outras soluções no início — mas é totalmente natural e não invasivo.</p>
+                    <p>Projetado para reverter os danos causados por calçados inadequados, o Bunion Fix se ajusta a todos os tamanhos de pé, desde crianças até o número 47 masculino. Seu design reversível permite o uso em qualquer um dos pés.</p>
+                </div>
+            </div>
+            <div class="how-work-video">
+                <video autoplay loop muted width="100%" preload="metadata" playsinline disablepictureinpicture>
+                    <source src="./videos/howwork.mp4" type="video/mp4">
+                    Seu navegador não suporta o vídeo.
+                </video>
+            </div>
+        </div>
+    </section>
+    <!-- How Does It Work Section -->
+
+    <!-- How to Use Section -->
+    <section class="how-to-use">
+        <div class="container">
+            <h2>Como Usar - Simples e Eficaz:</h2>
+            <div class="steps-grid">
+                <div class="step-item">
+                    <img src="./images/passo1.webp" alt="passo-1">
+                    <div class="step-number">1</div>
+                    <h4>Coloque</h4>
+                    <p>o BUNIFIX™ no pé afetado</p>
+                </div>
+                <div class="step-item">
+                    <img src="./images/passo2.webp" alt="passo-2">
+                    <div class="step-number">2</div>
+                    <h4>Ajuste</h4>
+                    <p>a intensidade conforme seu conforto</p>
+                </div>
+                <div class="step-item">
+                    <img src="./images/passo3.webp" alt="passo-3">
+                    <div class="step-number">3</div>
+                    <h4>Use</h4>
+                    <p>por 30 minutos diariamente</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">4</div>
+                    <h4>Relaxe</h4>
+                    <p>enquanto o dispositivo faz o trabalho</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">5</div>
+                    <h4>Sinta</h4>
+                    <p>o alívio imediato e a correção progressiva</p>
+                </div>
+            </div>
+            <div class="tip">
+                <strong>💡 Dica:</strong> Use enquanto assiste TV, lê ou relaxa. Também pode ser usado durante o sono!
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits">
+        <div class="container">
+            <h2>8 razões pelas quais você vai adorar o <b class="description-highligt-text">BuniFix</b></h2>
+            <div class="benefits-box">
+                <div class="benefits-image">
+                    <img src="./images/reason.webp" alt="Benefícios">
+                </div>
+                <div class="benefits-table">
+                    <div class="benefit-row">
+                        <div class="benefit-title"><i class="fa-solid fa-circle-check benefits-check"></i> Alívio Imediato da Dor</div>
+                        <div class="benefit-result">Caminhe, exercite-se e durma sem desconforto</div>
+                    </div>
+                    <div class="benefit-row">
+                        <div class="benefit-title"><i class="fa-solid fa-circle-check benefits-check"></i> Previne Crescimento</div>
+                        <div class="benefit-result">Impede que o joanete piore</div>
+                    </div>
+                    <div class="benefit-row">
+                        <div class="benefit-title"><i class="fa-solid fa-circle-check benefits-check"></i> Alternativa à Cirurgia</div>
+                        <div class="benefit-result">Evite procedimentos invasivos e caros</div>
+                    </div>
+                    <div class="benefit-row">
+                        <div class="benefit-title"><i class="fa-solid fa-circle-check benefits-check"></i> Realinhamento Firme</div>
+                        <div class="benefit-result">Correção real que funciona</div>
+                    </div>
+                    <div class="benefit-row">
+                        <div class="benefit-title"><i class="fa-solid fa-circle-check benefits-check"></i> Intensidade Ajustável</div>
+                        <div class="benefit-result">Personalize conforme sua necessidade</div>
+                    </div>
+                    <div class="benefit-row">
+                        <div class="benefit-title"><i class="fa-solid fa-circle-check benefits-check"></i> Aprovação Médica</div>
+                        <div class="benefit-result">Projetado por profissionais</div>
+                    </div>
+                    <div class="benefit-row">
+                        <div class="benefit-title"><i class="fa-solid fa-circle-check benefits-check"></i> Fácil de Usar</div>
+                        <div class="benefit-result">Portátil e prático</div>
+                    </div>
+                    <div class="benefit-row">
+                        <div class="benefit-title"><i class="fa-solid fa-circle-check benefits-check"></i> Garantia Total</div>
+                        <div class="benefit-result">90 dias de garantia ou dinheiro de volta</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>O Que Nossos Clientes Estão Dizendo:</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-item">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <blockquote>
+                        "Sofri com dor de joanete por 2 anos. Duas semanas depois de usar o BUNIFIX™, mal consigo notar a dor. Mudou minha vida completamente!"
+                    </blockquote>
+                    <cite>- Cliente verificado, 4.8/5 estrelas</cite>
+                </div>
+                <div class="testimonial-item">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <blockquote>
+                        "Aos 56 anos, tentei quase todas as soluções. O BUNIFIX™ não só reduziu a dor, mas meu joanete está visivelmente menor!"
+                    </blockquote>
+                    <cite>- Cliente verificado</cite>
+                </div>
+                <div class="testimonial-item">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <blockquote>
+                        "Usei por um ano e meu joanete praticamente desapareceu. Posso usar qualquer sapato sem desconforto!"
+                    </blockquote>
+                    <cite>- Cliente verificado</cite>
+                </div>
+            </div>
+            <div class="rating-summary">
+                <strong><i class="fa-solid fa-star"></i> Avaliação: 4.8/5 estrelas</strong> com centenas de clientes satisfeitos
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Section -->
+    <section class="order" id="order">
+        <div class="container">
+            <h2>OFERTA ESPECIAL <br> APENAS HOJE!</h2>
+
+        
+            <div class="stock-warning">
+                <strong>⚠️ ÚLTIMAS UNIDADES EM ESTOQUE!</strong>
+            </div>
+
+            <div class="order-buttons">
+                <a href="https://checkout.bunifix.site/VCCL1O8SC292" class="btn-order-primary">
+                    <i class="fa-solid fa-cart-shopping"></i> COMPRAR AGORA - R$ 128,95
+                </a>
+                <button class="btn-whatsapp" onclick="orderWhatsApp()">
+                    <i class="fa-solid fa-mobile"></i> COMPRAR VIA WHATSAPP
+                </button>
+                <div class="phone-order">
+                    <i class="fa-solid fa-phone"></i> <strong>Telefone:</strong> (42) 98887-5249
+                </div>
+            </div>
+
+            <div class="security-badges">
+                <div class="security-item"><i class="fa-solid fa-lock"></i> SSL Certificado</div>
+                <div class="security-item"><i class="fa-solid fa-award"></i> Garantia de Entrega</div>
+                <div class="security-item"><i class="fa-solid fa-phone"></i> Suporte 24/7</div>
+                <div class="security-item"><i class="fa-solid fa-shield-alt"></i> Política de Privacidade</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clinical Proof Section -->
+    <section class="clinical-proof">
+        <div class="clinical-proof-container">
+            <div class="clinical-proof-panel">
+                <h2>Prova Clínica</h2>
+                <div class="clinical-proof-text">
+                    <p><b>Eficácia de Intervenções Não Cirúrgicas para Hallux Valgus (Joanetes): Uma Revisão Sistemática e Meta-Análise</b></p>
+                    <p>Os resultados de 8 estudos mostraram uma redução significativa da dor com o uso de órteses para os pés, talas noturnas e talas dinâmicas. Quatro estudos relataram uma redução clinicamente significativa no ângulo HV com talas noturnas.</p>
+                    <p><b>Autores: Sheree E Hurn, Barry G Matthews, Shannon E Munteanu, Hylton B Menz:</b></p>
+                </div>
+                <div class="clinical-proof-button">
+                    <a href="https://pubmed.ncbi.nlm.nih.gov/33768721/" target="_blank">VEJA OS RESULTADOS 👉</a>
+                </div>
+            </div>
+            <div class="clinical-proof-img">
+                <img src="./images/C.webp" alt="Imagem">
+            </div>
+        </div>
+    </section>
+    <!-- Clinical Proof Section -->
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <h2><i class="fa-solid fa-circle-question"></i> Perguntas Frequentes:</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <strong>P: Funciona para todos os tamanhos de pé?</strong>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <strong>R:</strong> Sim! O BUNIFIX™ é ajustável e serve desde pés infantis até adulto tamanho 44
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <strong>P: Posso usar com sapatos?</strong>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <strong>R:</strong> O BUNIFIX™ é ideal para uso em casa. Para o dia a dia, recomendamos produtos complementares
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <strong>P: Quanto tempo para ver resultados?</strong>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <strong>R:</strong> Alívio imediato em 30 minutos. Resultados significativos em 2 semanas de uso consistente
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <strong>P: Quanto tempo leva para chegar?</strong>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <strong>R:</strong> Prazo médio por região é de 3 a 12 dias úteis. Código de rastreamento em até 24 h após a compra
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <strong>P: É seguro?</strong>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <strong>R:</strong> Totalmente seguro! Aprovado por ortopedistas e sem efeitos colaterais
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta">
+        <div class="container">
+            <h2><i class="fa-solid fa-bolt"></i> ÚLTIMAS UNIDADES! NÃO PERCA ESTA OPORTUNIDADE</h2>
+            <p><strong>Milhares de pessoas já se livraram da dor do joanete com o BUNIFIX™.</strong></p>
+            <p><strong>Será que você vai continuar sofrendo ou vai tomar a decisão que vai mudar sua vida?</strong></p>
+            
+            <div class="choice-section">
+                <h3><i class="fa-solid fa-bullseye orange-icon"></i> A ESCOLHA É SUA:</h3>
+                <div class="choices">
+                    <div class="choice-bad">
+                        <i class="fa-solid fa-circle-xmark red-icon"></i> <strong>Continuar sofrendo</strong> com dor, limitações e risco de cirurgia
+                    </div>
+                    <div class="choice-good">
+                        <i class="fa-solid fa-square-check green-icon"></i> <strong>Agir AGORA</strong> e se livrar da dor para sempre por apenas R$ 128,95
+                    </div>
+                </div>
+            </div>
+
+            <a href="https://checkout.bunifix.site/VCCL1O8SC292" class="btn-final-cta">
+                <i class="fa-solid fa-cart-shopping"></i> COMPRAR AGORA - OFERTA ESPECIAL R$ 128,95
+            </a>
+            <div class="final-benefits">
+                (Frete GRÁTIS + Garantia de 90 Dias + eBook de Bônus)
+            </div>
+            <div class="final-urgency">
+                <i class="fa-solid fa-clock"></i> Oferta válida apenas hoje - Não perca!
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="contact-info">
+                    <p><i class="fa-solid fa-comment-dots"></i> Dúvidas? WhatsApp: (42) 98887-5249</p>
+                    <p><i class="fa-solid fa-lock"></i> Compra segura e protegida</p>
+                    <p><i class="fa-solid fa-box"></i> Entrega rápida para todo o Brasil</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating CTA -->
+    <div class="floating-cta" id="floatingCTA">
+        <button onclick="scrollToTop()">
+            <i class="fa-solid fa-cart-shopping"></i> COMPRAR AGORA - R$ 128,95
+        </button>
+    </div>
+
+    <script src="./script.js"></script>
+    <script>
+        const images = [
+            { src: "./images/1.webp", alt: "Produto" },
+            { src: "./images/2.webp", alt: "Produto" },
+            { src: "./images/3.webp", alt: "Produto" },
+            { src: "./images/4.webp", alt: "Produto" },
+            { src: "./images/5.webp", alt: "Produto" },
+            { src: "./images/6.webp", alt: "Produto" }
+        ];
+
+        let currentImageIndex = 0;
+        let autoSlideInterval;
+        let touchStartX = 0;
+        let touchEndX = 0;
+
+        function updateGallery() {
+            const imageElement = document.getElementById('gallery-image');
+            const indicators = document.querySelectorAll('.indicator');
+
+            imageElement.src = images[currentImageIndex].src;
+            imageElement.alt = images[currentImageIndex].alt;
+
+            indicators.forEach((indicator, index) => {
+                indicator.classList.toggle('active', index === currentImageIndex);
+            });
+        }
+
+        function changeImage(direction) {
+            currentImageIndex += direction;
+            if (currentImageIndex >= images.length) {
+                currentImageIndex = 0;
+            } else if (currentImageIndex < 0) {
+                currentImageIndex = images.length - 1;
+            }
+            updateGallery();
+            resetAutoSlide();
+        }
+
+        function currentImage(index) {
+            currentImageIndex = index - 1;
+            updateGallery();
+            resetAutoSlide();
+        }
+
+        function resetAutoSlide() {
+            clearInterval(autoSlideInterval);
+            autoSlideInterval = setInterval(() => {
+                changeImage(1);
+            }, 5000);
+        }
+
+        // Touch event handlers for swipe
+        function handleTouchStart(event) {
+            touchStartX = event.changedTouches[0].screenX;
+        }
+
+        function handleTouchEnd(event) {
+            touchEndX = event.changedTouches[0].screenX;
+            handleGesture();
+        }
+
+        function handleGesture() {
+            const swipeThreshold = 50; // Minimum distance for swipe
+            if (touchEndX < touchStartX - swipeThreshold) {
+                // Swipe left 
+                changeImage(1);
+            } else if (touchEndX > touchStartX + swipeThreshold) {
+                // Swipe right 
+                changeImage(-1);
+            }
+        }
+
+        // Initialize
+        updateGallery();
+        autoSlideInterval = setInterval(() => {
+            changeImage(1);
+        }, 5000);
+
+        // Add touch event listeners to the image wrapper
+        const imageWrapper = document.querySelector('.image-wrapper');
+        if (imageWrapper) {
+            imageWrapper.addEventListener('touchstart', handleTouchStart, false);
+            imageWrapper.addEventListener('touchend', handleTouchEnd, false);
+        }
+
+        // Keyboard navigation
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'ArrowLeft') {
+                changeImage(-1);
+            } else if (event.key === 'ArrowRight') {
+                changeImage(1);
+            }
+        });
+    </script>
+    <script>
+        window.pixelId = "6874da9345a2aaf27d99d45d";
+        var a = document.createElement("script");
+        a.setAttribute("async", "");
+        a.setAttribute("defer", "");
+        a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+        document.head.appendChild(a);
+    </script>
+</body>
+</html>
